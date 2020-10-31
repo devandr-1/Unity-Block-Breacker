@@ -12,6 +12,12 @@ public class Ball : MonoBehaviour
     [SerializeField]
     Vector2 velosity;
 
+    [SerializeField]
+    float xPush = 2f;
+    
+    [SerializeField]
+    float yPush = 15f;
+
     // State
     Vector2 paddleToBallVector;
 
@@ -37,7 +43,7 @@ public class Ball : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GetComponent<Rigidbody2D>().velocity = velosity;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(xPush, yPush);
             hasStarted = true;
         }
     }
