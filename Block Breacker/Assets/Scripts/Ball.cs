@@ -7,7 +7,7 @@ public class Ball : MonoBehaviour
     // Config params
     
     [SerializeField]
-    Paddle paddle1;
+    Paddle paddle1 = null;
 
     [SerializeField]
     Vector2 velosity;
