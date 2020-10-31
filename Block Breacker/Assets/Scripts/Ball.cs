@@ -9,8 +9,13 @@ public class Ball : MonoBehaviour
     [SerializeField]
     Paddle paddle1;
 
+    [SerializeField]
+    Vector2 velosity;
+
     // State
     Vector2 paddleToBallVector;
+
+    private bool hasStarted = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +25,24 @@ public class Ball : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        if (!hasStarted)
+        {
+            LockBallToPaddle();
+            LanchOnMouseClick();
+        }
+    }
+
+    private void LanchOnMouseClick()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            GetComponent<Rigidbody2D>().velocity = velosity;
+            hasStarted = true;
+        }
+    }
+
+    private void LockBallToPaddle()
     {
         Vector2 paddlePos = new Vector2(paddle1.transform.position.x, paddle1.transform.position.y);
         transform.position = paddlePos + paddleToBallVector;

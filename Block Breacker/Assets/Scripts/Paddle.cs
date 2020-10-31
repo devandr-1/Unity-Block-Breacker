@@ -26,4 +26,8 @@ public class Paddle : MonoBehaviour
         Vector2 paddlePos = new Vector2(Mathf.Clamp(mousePosInUnits, leftScreenLimit, rightScreenLimit), transform.position.y);
         transform.position = paddlePos;
     }
+
+    
+
+    
 }

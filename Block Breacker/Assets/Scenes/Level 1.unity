@@ -798,6 +798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddle1: {fileID: 1776188029}
+  velosity: {x: 2, y: 15}
 --- !u!1 &1512251904
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,8 +993,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenWidthInUnits: 16
-  leftScreenLimit: 0
-  rightScreenLimit: 16
+  leftScreenLimit: 1
+  rightScreenLimit: 15
 --- !u!1 &1786134630
 GameObject:
   m_ObjectHideFlags: 0
