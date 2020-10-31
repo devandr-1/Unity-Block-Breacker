@@ -1935,6 +1935,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1438067526632334455, guid: 07f1380c1a078a64fa2cbef954d0ed29,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 2395901624685877838}
     - target: {fileID: 1709586701072424174, guid: 07f1380c1a078a64fa2cbef954d0ed29,
         type: 3}
       propertyPath: m_Name
@@ -2831,6 +2836,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2395901623719179221, guid: 031e79848f4b4bf41ac93c9c23ac39b8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2395901623719179223, guid: 031e79848f4b4bf41ac93c9c23ac39b8,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2946,8 +2956,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2395901625017455039, guid: 031e79848f4b4bf41ac93c9c23ac39b8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508535036566380519, guid: 031e79848f4b4bf41ac93c9c23ac39b8,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508535036566380519, guid: 031e79848f4b4bf41ac93c9c23ac39b8,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508535036566380519, guid: 031e79848f4b4bf41ac93c9c23ac39b8,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508535036566380519, guid: 031e79848f4b4bf41ac93c9c23ac39b8,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508535036566380519, guid: 031e79848f4b4bf41ac93c9c23ac39b8,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 031e79848f4b4bf41ac93c9c23ac39b8, type: 3}
+--- !u!114 &2395901624685877838 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2508535036566380519, guid: 031e79848f4b4bf41ac93c9c23ac39b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2395901624685877837}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2474269390126398725
 PrefabInstance:
   m_ObjectHideFlags: 0
