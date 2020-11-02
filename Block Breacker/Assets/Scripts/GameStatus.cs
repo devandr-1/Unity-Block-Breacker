@@ -18,14 +18,28 @@ public class GameStatus : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI scoreText;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        scoreText.text = "0";
+        int count = FindObjectsOfType<GameStatus>().Length;
+        if (count > 1)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+        scoreText.text = currentScore.ToString();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         Time.timeScale = gameSpeed;
     }
